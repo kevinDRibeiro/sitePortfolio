@@ -1,0 +1,18 @@
+.footer-background {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-size: 100vw auto;
+    background-image: url('../../assets/footerBackground.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .links {
+        position: absolute;
+        width: 12.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
