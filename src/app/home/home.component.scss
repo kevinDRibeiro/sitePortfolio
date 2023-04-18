@@ -1,0 +1,72 @@
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 1200px;
+        
+        img {
+            position: absolute;
+            height: 772px;
+            z-index: -1;
+            top: 5%;
+            left: 17%;
+        }
+
+        @media screen and (max-width: 1800px){
+            img {
+                left: 14%;
+            }
+        }
+
+        @media screen and (max-width: 1500px){
+            img {
+                left: 5%;
+            }
+        }
+
+        @media screen and (max-width: 1300px){
+            img {
+                left: -10%;
+            }
+        }
+
+        @media screen and (max-width: 1000px){
+            img {
+                left: -20%;
+            }
+        }
+
+        h1 {
+            margin-top: 10%;
+            margin-right: 3%;
+            width: 40%;
+            min-height: 500px;
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 52px;
+            color: #79007F;
+        }
+
+        
+        @media screen and (max-width: 800px){
+            img {
+                height: 500px;
+                left: -25%;
+            }
+            h1 {
+                width: 50%;
+                font-size: 30px;
+                min-height: 350px;
+            }
+        }
+    }
+
+}
+
