@@ -1,11 +1,16 @@
 
-
-nav{
+.nav-banner {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    
+    justify-content: center;
+
+    img {
+        position: absolute;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
     .name {
         position: absolute;
         width: 100%;
@@ -16,7 +21,15 @@ nav{
         font-style: normal;
         font-weight: 400;
         font-size: 60px;
-        line-height: 89px;}
+        line-height: 89px;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    
+    
     @media only screen and (max-width: 1200px) {
         .name {
             margin: 14px 0 0 40px;
@@ -32,7 +45,7 @@ nav{
 
 
     ul {
-        margin: 0;
+        margin: 7rem 0 0 0;
         width: 100%;
         max-width: 1200px;
         display: flex;
@@ -81,6 +94,7 @@ nav{
                 display: none;
             }
             li {
+                font-size: 15px;
                 width: 25%;
             }
         }
@@ -94,13 +108,4 @@ nav{
         }
     }
     
-    .nav-background {
-        img {
-            background-size: 100vw auto;
-            height: 100%;
-        }
-    }
-    .nav-container {
-        width: 1200px;
-    }
 }

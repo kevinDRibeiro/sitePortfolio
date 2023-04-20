@@ -11,6 +11,10 @@ div {
         
         img {
             position: absolute;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
             height: 772px;
             z-index: -1;
             top: 5%;
