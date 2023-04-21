@@ -26,19 +26,21 @@
         font-size: 60px;
         line-height: 89px;
     }
+
+    
+    @media only screen and (max-width: 750px) {
+        .name {
+            font-size: 30px;
+            padding: 3% 0 0 0;
+        }
+    }
 }
 
 nav{
     display: flex;
     justify-content: center;
-    
-    
-    @media only screen and (max-width: 1200px) {
-        .name {
-            margin: 14px 0 0 40px;
-            font-size: 45px;
-        }
-    }
+
+
     @media only screen and (max-width: 600px) {
         ul {
             width: 100%;
@@ -93,9 +95,6 @@ nav{
         }
 
         @media only screen and (max-width: 750px) {
-            .name {
-                padding: 3% 0 0 0;
-            }
             h1 {
                 display: none;
             }
