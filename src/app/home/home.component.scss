@@ -80,6 +80,10 @@ div {
             height: 140px;
         }
 
+        .divisor-mobile {
+            display: none;
+        }
+
         h1 {
             margin-top: 3rem;
             position: absolute;
@@ -95,6 +99,15 @@ div {
         @media screen and (max-width: 750px) {
             h1 {
                 font-size: 28px;
+            }
+
+            .divisor-desktop {
+                display: none;
+            }
+
+            .divisor-mobile {
+                width: 100%;
+                display: block;
             }
         }
     }
