@@ -21,7 +21,7 @@ div {
         h1 {
             word-wrap: break-word;
             position: absolute;
-            margin: 7% 0 0 30%;
+            margin: 7% 0 0 40%;
             width: 38rem;
             min-height: 500px;
             font-family: 'Oswald';
@@ -32,9 +32,9 @@ div {
             color: #79007F;
         }
 
-        @media screen and (max-width: 1800px){
-            h1 {
-                margin: 7% 0 0 40%;
+        @media screen and (max-width: 1900px){
+            h1 {    
+                margin: 7% 0 0 42%;
             }
         }
         
@@ -54,8 +54,8 @@ div {
 
         @media screen and (max-width: 750px){
             h1 {
-                margin: 15% 0 0 40%;
-                width: 55%;
+                margin: 20% 0 0 40%;
+                width: 35%;
                 font-size: 16px;
             }
             img {
@@ -64,13 +64,20 @@ div {
                 left: -8rem;
             }
         }
+
+        @media screen and (max-width: 500px){
+            h1 {
+                margin: 15% 0 0 40%;
+                width: 55%;
+                font-size: 16px;
+            }
+        }
     }
 
     .divisor {
         img {
             width: 100%;
             height: 140px;
-            object-fit: cover;
         }
 
         h1 {
