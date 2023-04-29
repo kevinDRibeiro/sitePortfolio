@@ -1,0 +1,22 @@
+.skill-bullets {
+
+    display: flex;
+    flex-direction: row;
+
+    .bullet-on {
+        margin: 0 1rem 0.5rem 0;
+        height: 15px;
+        width: 15px;
+        background-color: #79007F;
+        border-radius: 50%;
+    }
+    
+    .bullet-off {
+        margin: 0 1rem 0.5rem 0;
+        height: 15px;
+        width: 15px;
+        background-color: #DB80DF;
+        border-radius: 50%;
+    }
+}
+

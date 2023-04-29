@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { MatButtonModule } from '@angular/material';
+import { SkillSetComponent } from './skill-set/skill-set.component';
+import { SkillBulletsComponent } from './skill-bullets/skill-bullets.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { MatButtonModule } from '@angular/material';
     FooterComponent,
     ResumeComponent,
     ProjectsComponent,
+    SkillSetComponent,
+    SkillBulletsComponent,
     ],
   imports: [
     BrowserModule,

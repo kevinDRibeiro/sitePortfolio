@@ -1,0 +1,25 @@
+h3 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 52px;
+    color: #79007F;
+}
+
+.skill-cel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h4 {
+        padding: 0 1rem 0.5rem 1rem;
+        width: 11rem;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 37px;
+        color: #79007F;
+    }
+}

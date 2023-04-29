@@ -1,0 +1,46 @@
+.container {
+    max-width: 1200px;
+    padding: 1.25rem 5% 1.25rem 5%;
+
+    h1 {
+        padding: 2rem 0 2.5rem 0;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 59px;
+        color: #79007F;
+    }
+
+    h3 {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 52px;
+        color: #79007F;
+    }
+
+    h4 {
+        padding: 0 0 1rem 0;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 37px;
+        color: #79007F;
+    }
+
+    li {
+        font-family: 'Oswald-light';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 37px;
+        color: #79007F;
+    }
+
+    .exp {
+        padding: 0 0 1rem 0;
+    }
+}
