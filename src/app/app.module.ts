@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { MatButtonModule } from '@angular/material';
+import { MatButtonModule, MatCardModule } from '@angular/material';
 import { SkillSetComponent } from './skill-set/skill-set.component';
 import { SkillBulletsComponent } from './skill-bullets/skill-bullets.component';
 
@@ -26,7 +26,8 @@ import { SkillBulletsComponent } from './skill-bullets/skill-bullets.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
