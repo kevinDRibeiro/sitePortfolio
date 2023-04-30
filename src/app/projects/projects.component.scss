@@ -75,6 +75,11 @@
 }
 
 @media only screen and (max-width: 800px) {
+
+    .container {
+        max-width: 1200px;
+        padding: 1.25rem 5% 6rem 5%;
+    }
     .project-card {
         width: 320px;
     }
