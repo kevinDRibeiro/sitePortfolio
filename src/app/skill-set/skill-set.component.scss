@@ -23,3 +23,13 @@ h3 {
         color: #79007F;
     }
 }
+
+@media scream and (max-width: 750px) {
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+}

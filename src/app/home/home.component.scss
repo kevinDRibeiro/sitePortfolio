@@ -1,19 +1,22 @@
-div {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+    padding: 0;
 
-    section {
+    .banner {
         display: flex;
         flex-direction: column;
-        max-width: 1200px;
-        align-items: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 34rem;
         
         img {
             position: relative;
             z-index: -1;
             top: -10rem;
-            left: -13rem;
+            left: -26rem;
             width: 75%;
         }
 
@@ -21,7 +24,7 @@ div {
         h1 {
             word-wrap: break-word;
             position: absolute;
-            margin: 7% 0 0 40%;
+            margin: 10rem 0 0 0;
             width: 38rem;
             min-height: 500px;
             font-family: 'Oswald';
@@ -30,12 +33,6 @@ div {
             font-size: 35px;
             line-height: 52px;
             color: #79007F;
-        }
-
-        @media screen and (max-width: 1900px){
-            h1 {    
-                margin: 7% 0 0 42%;
-            }
         }
         
         @media screen and (max-width: 1200px){
@@ -46,16 +43,10 @@ div {
             }
         }
 
-        @media screen and (max-width: 1200px){
-            h1 {
-                width: 50%;
-            }
-        }
-
         @media screen and (max-width: 750px){
             h1 {
-                margin: 20% 0 0 40%;
-                width: 35%;
+                margin: 6rem 0 0 0;
+                width: 42%;
                 font-size: 16px;
             }
             img {
@@ -83,9 +74,24 @@ div {
     
     }
 
+    @media screen and (max-width: 750px) {
+        .banner {
+            height: 27rem;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .banner {
+            height: 16rem;
+        }
+    }
+
     .divisor {
+        display: flex;
+        justify-content: center;
+
         img {
-            width: 100%;
+            width: 100vw;
             height: 140px;
         }
 
@@ -125,6 +131,12 @@ div {
                 font-size: 25px;
             }
         }
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     p {

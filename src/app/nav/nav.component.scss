@@ -21,7 +21,7 @@ a {
         width: 100%;
         max-width: 1200px;
         color: #fff;
-        margin: 3px 0 0 40px;
+        padding: 3px 0 0 20px;
         font-family: 'Oswald';
         font-style: normal;
         font-weight: 400;
@@ -60,6 +60,7 @@ nav{
         max-width: 1200px;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
         
         h1 {
             margin-top:0;
