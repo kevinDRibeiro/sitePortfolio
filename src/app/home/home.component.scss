@@ -19,12 +19,6 @@
             position: relative;
             top: -20%;
 
-            .bannerOrnament {
-                z-index: -1;
-                width: 780px;
-                position: absolute;
-            }
-           
             .bannerFace {
                 width: 340px;
             }
@@ -39,9 +33,13 @@
             }
 
             .bannerOrnament {
+                z-index: -1;
+                width: 780px;
+                position: absolute;
                 animation: spin 10s infinite linear;
             }
 
+           
             @media screen and (max-width: 750px) {
                 .bannerOrnament {
                     width: 500px;
@@ -51,6 +49,17 @@
                     width: 210px;
                 }
             }
+
+            @media screen and (max-width: 500px) {
+                .bannerOrnament {
+                    width: 300px;
+                }
+               
+                .bannerFace {
+                    width: 130px;
+                }
+            }
+
         }
 
 
@@ -76,7 +85,7 @@
 
         @media screen and (max-width: 750px){
             h1 {
-                margin: 6rem 0 0 0;
+                margin: 14% 0 0 0;;
                 font-size: 16px;
             }
 
@@ -88,14 +97,16 @@
 
         @media screen and (max-width: 500px){
             h1 {
-                margin: 15% 0 0 40%;
                 font-size: 16px;
+            }
+
+            .imageContainer {
+                top: -35%;
             }
         }
 
         @media screen and (max-width: 400px){
             h1 {
-                margin: 15% 0 0 33%;
                 line-height: 30px;
             }
         }
