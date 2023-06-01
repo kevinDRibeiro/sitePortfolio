@@ -7,25 +7,57 @@
 
     .banner {
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        justify-content: center;
         width: 100%;
         height: 34rem;
         
-        img {
+        .imageContainer {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: relative;
-            z-index: -1;
-            top: -10rem;
-            left: -26rem;
-            width: 75%;
+            top: -20%;
+
+            .bannerOrnament {
+                z-index: -1;
+                width: 780px;
+                position: absolute;
+            }
+           
+            .bannerFace {
+                width: 340px;
+            }
+
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .bannerOrnament {
+                animation: spin 10s infinite linear;
+            }
+
+            @media screen and (max-width: 750px) {
+                .bannerOrnament {
+                    width: 500px;
+                }
+               
+                .bannerFace {
+                    width: 210px;
+                }
+            }
         }
 
 
         h1 {
             word-wrap: break-word;
-            position: absolute;
             margin: 10rem 0 0 0;
-            width: 38rem;
+            text-align: center;
             min-height: 500px;
             font-family: 'Oswald';
             font-style: normal;
@@ -37,7 +69,6 @@
         
         @media screen and (max-width: 1200px){
             h1 {
-                width: 33rem;
                 font-size: 30px;
                 min-height: 350px;
             }
@@ -46,20 +77,18 @@
         @media screen and (max-width: 750px){
             h1 {
                 margin: 6rem 0 0 0;
-                width: 42%;
                 font-size: 16px;
             }
-            img {
-                width: 85%;
-                top: -3rem;
-                left: -8rem;
+
+            .imageContainer {
+                top: -15%;
             }
+
         }
 
         @media screen and (max-width: 500px){
             h1 {
                 margin: 15% 0 0 40%;
-                width: 55%;
                 font-size: 16px;
             }
         }
@@ -67,7 +96,6 @@
         @media screen and (max-width: 400px){
             h1 {
                 margin: 15% 0 0 33%;
-                width: 63%;
                 line-height: 30px;
             }
         }
@@ -76,7 +104,7 @@
 
     @media screen and (max-width: 750px) {
         .banner {
-            height: 27rem;
+            height: 22rem;
         }
     }
 
