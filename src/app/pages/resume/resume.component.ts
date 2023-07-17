@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Skill } from '../model/skill';
+import { Skill } from '../../shared/model/skill';
 
 @Component({
   selector: 'app-resume',
