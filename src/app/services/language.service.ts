@@ -14,7 +14,6 @@ export class LanguageService {
 
   setPtbr() {
     this.ptbr.next(true);
-    console.log(this.ptbr.getValue())
   }
 
   getLanguage(): Observable<boolean> {
