@@ -5,9 +5,10 @@
 <nav>
     <ul>
         <h1>FULLSTACK DEVELOPER</h1>
-        <li><a routerLink="">INÍCIO</a></li>
-        <li><a routerLink="/curriculo">CURRÍCULO</a></li>
-        <li><a routerLink="/projetos">PROJETOS</a></li>
-        <li><a href="#links">CONTATO</a></li>
+        <li><a routerLink="">{{ ptbr? 'INÍCIO' : 'HOME'}}</a></li>
+        <li><a routerLink="/curriculo">{{ ptbr? 'CURRÍCULO' : 'RESUME'}}</a></li>
+        <li><a routerLink="/projetos">{{ ptbr? 'PROJETOS' : 'PROJECTS'}}</a></li>
+        <li><a (click)="scroll()">{{ ptbr? 'CONTATO' : 'CONTACT'}}</a></li>
+        <li  (click)="changeLanguage()"><a>{{ ptbr? 'ENGLISH' : 'PTBR'}}</a></li>
     </ul>
-</nav>
+</nav>  

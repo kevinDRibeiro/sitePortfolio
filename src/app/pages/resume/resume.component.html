@@ -1,7 +1,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-5 col-sm-12">
-            <h1>QUALIFICAÇÕES</h1>
+            <h1>
+                {{ptbr? 'QUALIFICAÇÕES' : 'QUALIFICATIONS'}}
+            </h1>
+
             <skill-set title="Frontend" [skills]="front">
             </skill-set>
             <skill-set title="Backend" [skills]="back">
@@ -10,7 +13,10 @@
             </skill-set>
         </div>
         <div class="col-md-7 col-sm-12">
-            <h1>EXPERIÊNCIA</h1>
+            <h1>
+                {{ptbr? 'EXPERIÊNCIA' : 'EXPERIENCE'}}
+            </h1>
+
             <div class="row">
                 <div class="col-1">
                     <div class="dot">
@@ -19,18 +25,22 @@
                 </div>
                 <div class="exp col-11">
                     <h3>Front-end Developer</h3>
-                    <h4>Mycapital | Julho 2022 - Fevererio 2023</h4>
+                    <h4>Mycapital | {{ptbr? 'Julho' : 'July'}} 2022 - {{ptbr? 'Fevererio' : 'February'}} 2023</h4>
                     <li>
-                        Desenvolvimento de projetos a partir de protótipos e especificações utilizando Angular, Typescript, React, Node e Sass.
+                        {{ptbr? 'Desenvolvimento de projetos a partir de protótipos e especificações utilizando Angular, Typescript, React, Node e Sass.' 
+                        : 'Developed projects from prototypes and specifications using Angular, Typescript, React, Node, and Sass.'}}
                     </li>
                     <li>
-                        Experiência em testes unitários com Jasmine e Karma.
+                        {{ptbr? 'Experiência em testes unitários com Jasmine e Karma.' 
+                        : 'Experience in unit testing with Jasmine and Karma.'}}
                     </li>
                     <li>
-                        Devops aplicado ao dia a dia e uso de sistemas azure.
+                        {{ptbr? 'Devops aplicado ao dia a dia e uso de sistemas azure.'
+                        : 'Applied DevOps to daily tasks and use of Azure systems.'}}
                     </li>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-1">
                     <div class="dot">
@@ -38,15 +48,18 @@
                 </div>
                 <div class="exp col-11">
                     <h3>Front-end Developer</h3>
-                    <h4>BMS Projetos e consultoria | Agosto 2021 - Julho 2022</h4>
+                    <h4>BMS Projetos e consultoria | {{ptbr? 'Agosto' : 'August'}} 2021 - {{ptbr? 'Julho' : 'July'}} 2022</h4>
                     <li>
-                        Atuei na criação de layouts, novos componentes e na manutenção dos mesmos. Desenvolvendo para sites , sistemas internos e produtos da empresa.
+                        {{ptbr? 'Atuei na criação de layouts, novos componentes e na manutenção dos mesmos. Desenvolvendo para sites , sistemas internos e produtos da empresa.' 
+                        : 'Worked on creating layouts, new components, and maintaining them. Developed for websites, internal systems, and company products.'}}
                     </li>
                     <li>
-                        Front com Angular, javascript, typescript e bootstrap.
+                        {{ptbr? 'Front com Angular, javascript, typescript e bootstrap.'
+                        : 'Front end using Angular, Javascript and Bootstrap.'}}
                     </li>
                     <li>
-                        Contato diário com a metodologia Scrum.
+                        {{ptbr? 'Contato diário com a metodologia Scrum.' 
+                        : 'Daily contact with Scrum methodology.'}}
                     </li>
                 </div>
             </div>
